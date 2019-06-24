@@ -13,4 +13,7 @@ export class HomeComponent implements OnInit {
     
   }
 
+  title = 'Test App'
+  subtitle = 'This app bla bla bla'
+
 }
