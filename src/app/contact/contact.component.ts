@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { NavbarComponent } from '../_components/navbar/navbar.component';
+import { Component, OnInit, Injectable } from '@angular/core';
 
+@Injectable({
+  providedIn: "root"
+})
 @Component({
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
@@ -10,9 +12,7 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    NavbarComponent.activeAbout = "nav-item active"
-    NavbarComponent.activeHome = "nav-item"
-    NavbarComponent.activeContact = "nav-item"
+    
   }
 
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NavbarComponent } from '../_components/navbar/navbar.component';
 
 @Component({
   templateUrl: './about.component.html',
@@ -10,9 +9,7 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    NavbarComponent.activeContact = "nav-item active"
-    NavbarComponent.activeAbout = "nav-item"
-    NavbarComponent.activeHome = "nav-item"
+    
   }
 
 }

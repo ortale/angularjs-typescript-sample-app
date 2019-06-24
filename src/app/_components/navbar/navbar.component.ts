@@ -1,6 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-declare var jquery:any;
-declare var $ :any;
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,29 +8,12 @@ declare var $ :any;
 })
 export class NavbarComponent implements OnInit {
 
-  active: string
-  static activeHome: string = "nav-item"
-  static activeAbout: string = "nav-item"
-  static activeContact: string = "nav-item"
+  constructor() {
 
-  constructor() { 
-    
-  }
-
-  setActive(active: string) {
-    this.active = active;
   }
 
   ngOnInit() {
-    
-  }
 
-  handleMenu(id: string) {
-    $("li").each(function() {
-      $(this).attr("class", "nav-item")
-    });
-
-    $("#" + id).attr("class", "nav-item active")
   }
 
 }
